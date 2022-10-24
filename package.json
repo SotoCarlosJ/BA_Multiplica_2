@@ -1,0 +1,19 @@
+{
+  "name": "ba_multiplica_2",
+  "version": "1.0.0",
+  "description": "practica html, css y js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SotoCarlosJ/BA_Multiplica_2.git"
+  },
+  "author": "Carlos Soto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SotoCarlosJ/BA_Multiplica_2/issues"
+  },
+  "homepage": "https://github.com/SotoCarlosJ/BA_Multiplica_2#readme"
+}

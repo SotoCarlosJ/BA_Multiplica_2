@@ -6,37 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica</title>
     <link rel="icon" href="/images/joystic_icon.png">
-    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">    
+    <script src="https://kit.fontawesome.com/08e5deb443.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div> <!-- Inicio Titulo y Audio -->
-            <h1>Video Games Store</h1>
-            <audio src="/audio/Super_Mario_Soundtrack.mp4" preload="auto" controls></audio>
-        </div> <!-- Fin Titulo y Audio -->
-
-        <hr>
-
-        <nav> <!-- Inicio de navbar -->
-            <ul>
-                <li>
-                    <a href="/index.html">Home</a>
-                </li>
-                <li>
-                    <a href="/pages/products.html">Productos</a>                    
-                </li>
-                <li>
-                    <a href="/pages/contact.html">Contacto</a>
-                </li>
-            </ul>
-        </nav> <!-- Fin de navbar -->
+        <div class="tittle"> <!-- Inicio .tittle -->
+            <h1>Video Game Store</h1>
+            <div id="soundtrack"> <!-- Inicion #soundtrack -->
+                <audio src="/audio/Super_Mario_Soundtrack.mp4" preload="auto" controls></audio>
+                <p>Soundtrack of the day: <span>Super Mario Bros.</span></p>
+            </div> <!-- Cierre #soundtrack -->
+        </div> <!-- Cierre .tittle -->
+        <div class="user"> <!-- Cierre .user -->
+            <a href="/pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="/pages/user/login.html">login</a>
+            <p> / </p>
+            <a href="/pages/user/register.html">register</a>
+        </div> <!-- Cierre .user -->
     </header>
+
+    <nav class="navbar"> <!-- Inicio .navbar -->
+        <ul>
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="/pages/news.html">Noticias</a>
+            </li>
+            <li>
+                <a href="/pages/products.html">Productos</a>                    
+            </li>
+            <li>
+                <a href="/pages/contact.html">Contacto</a>
+            </li>
+        </ul>
+    </nav> <!-- Cierre .navbar -->
 
     <hr>
 
     <main>
         <section>
-            <article> <!-- Inicio del 1er articulo Imagen-->
+            <article class="prueba"> <!-- Inicio del 1er articulo Imagen-->
                 <h2>Super Mario Bros</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dolorem laborum minima quaerat, in consectetur reiciendis tenetur error temporibus magnam consequatur, odio, cumque impedit eveniet esse hic aliquam a aut.</p>
 
