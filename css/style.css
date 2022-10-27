@@ -1,9 +1,17 @@
 :root {
+    --dark: #1f192f;
+    --darker-green: #2d6073;
+    --green: #65b8a6 ;
+    --lighter-green: #b5e8c3;
+    --yellow-green: #f0f7da;
+    --white: #FFFFFF;
+    /* Paleta de colores vieja
     --light_blue: #00B4FF;
     --dark-gray: #515151;
     --black: #000000;
     --white: #FFFFFF;
     --gray: #d1d1d1;
+    */
 }
 
 body {
@@ -28,7 +36,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 6rem;
-    background-color: var(--dark-gray);
+    background-color: var(--dark);
 }
 .tittle {
     display: flex;
@@ -37,7 +45,7 @@ header {
 }
 .tittle h1 {
     font-size: 3rem;
-    color: var(--gray);
+    color: var(--white);
 }
 audio {
     width: 210px;
@@ -53,20 +61,50 @@ audio {
 }
 #soundtrack span {
     font-weight: lighter;
-    color: var(--light_blue);
+    color: var(--green);
     text-decoration: underline;
 }
 .user {
     color: var(--white);
     display: flex;
-    gap: 0.8rem;
+    flex-direction: column;
+    gap: 2rem;
+    width: 12rem;
+    height: 2rem;
 }
-.user a {
+.user-search input {
+    position: absolute;
+    border: 1px solid var(--yellow-green);
+    border-radius: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    width: 12rem;
+    height: 2rem;
+}
+.user-search #btn {
+    position: relative;
+    color: var(--dark);
+    top: 0.5rem;
+    left: 10rem;
+    border-left: 1px solid var(--dark);
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+.user-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+.user-icons a {
     color: var(--white);
     text-decoration: none;
 }
 .navbar {
-    background-color: var(--black);
+    background-color: var(--darker-green);
+    border-top: 2px solid var(--yellow-green);
+    border-bottom: 2px solid var(--yellow-green);
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.64);
+-webkit-box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.64);
+-moz-box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.64);
 }
 .navbar ul {
     display: flex;
@@ -85,24 +123,25 @@ audio {
     text-decoration: none;
 }
 .navbar ul li:hover {
-    background-color: var(--light_blue);
+    background-color: var(--dark);
     color: var(--black);
-    box-shadow: 0px 0px 16px 7px rgba(0,0,0,0.51) inset;
-    -webkit-box-shadow: 0px 0px 16px 7px rgba(0,0,0,0.51) inset;
-    -moz-box-shadow: 0px 0px 16px 7px rgba(0,0,0,0.51) inset;
     font-weight: bold;
 }
 main {
-    background-color: var(--dark-gray);
+    background-color: var(--dark);
     padding: 4rem;
 }
 .container {
-    border: 1px solid white;
+    border: 2px solid var(--yellow-green);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.64);
     padding: 2rem;
     display: grid;
     gap: 8rem;
     grid-template-columns: repeat(3, 1fr);
-    background-color: var(--black);
+    background-color: var(--darker-green);
     color: var(--gray);
     text-align: left;
 }
@@ -113,13 +152,14 @@ main {
     margin-bottom: 1rem;
 }
 footer {
-    background-color: var(--black);
+    border-top: 2px solid var(--yellow-green);
+    background-color: var(--darker-green);
     padding: 2rem;
-    color: var(--gray);
+    color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 .socialnetwork {
     height: 0.4rem;
@@ -131,8 +171,12 @@ footer .socialnetwork {
 }
 footer .socialnetwork a:hover {
     font-size: 3rem;
-    color: var(--light_blue);
+    color: var(--green);
     display: flex;
     align-items: center;
     text-decoration: none;
+}
+.table-tittle {
+    margin-bottom: 1rem;
+    text-align: center;
 }
