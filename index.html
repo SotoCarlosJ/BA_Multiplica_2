@@ -15,42 +15,49 @@
 </head>
 <body>
     <header>
-        <div class="tittle"> <!-- Inicio .tittle -->
-            <h1>Video Game Store</h1>
+        <h1 class="tittle">Video Game Store</h1>
+        <div class="sub-tittle">
             <div id="soundtrack"> <!-- Inicion #soundtrack -->
                 <audio src="./audio/Super_Mario_Soundtrack.mp4" preload="auto" controls></audio>
                 <p>Soundtrack of the day: <span>Super Mario Bros.</span></p>
             </div> <!-- Cierre #soundtrack -->
-        </div> <!-- Cierre .tittle -->
-        <div class="user"> <!-- Cierre .user -->
-            <div class="user-search">
-                <input type="text" placeholder="Buscar">
-                <i id="btn" class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="user-icons">
-                <a href="./pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="./pages/user/login.html">login</a>
-                <p> / </p>
-                <a href="./pages/user/register.html">register</a>
-            </div>
-        </div> <!-- Cierre .user -->
+
+            <div class="user"> <!-- Cierre .user -->
+                <div class="user-search">
+                    <input type="text" placeholder="Buscar">
+                    <i id="btn" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="user-icons">
+                    <a href="./pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="./pages/user/login.html">login</a>
+                    <p> / </p>
+                    <a href="./pages/user/register.html">register</a>
+                </div>
+            </div> <!-- Cierre .user -->
+        </div>
+        
     </header>
 
     <nav class="navbar"> <!-- Inicio .navbar -->
-        <ul>
-            <li>
-                <a href="./index.html">Home</a>
-            </li>
-            <li>
-                <a href="./pages/news.html">Noticias</a>
-            </li>
-            <li>
-                <a href="./pages/products.html">Productos</a>                    
-            </li>
-            <li>
-                <a href="./pages/contact.html">Contacto</a>
-            </li>
-        </ul>
+        <div id="burguer-menu" >
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./pages/news.html">Noticias</a>
+                </li>
+                <li>
+                    <a href="./pages/products.html">Productos</a>                    
+                </li>
+                <li>
+                    <a href="./pages/contact.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
     </nav> <!-- Cierre .navbar -->
 
     <main>
@@ -63,10 +70,6 @@
                     <iframe width="440" height="220" src="https://www.youtube.com/embed/GTlGd-h4g6E" title="Evolution of Game of the Year Winner 1980-2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 </article> <!-- Cierre 1er articulo -->
-
-                <br>
-                <hr>
-                <br>
     
                 <article> <!-- Inicio 2nd articulo Video descargado-->
                     <h2>Stray - primeros 8 minutos</h2>
@@ -84,49 +87,48 @@
                     <figcaption>The Super Mario Bros Movie. Estreno: 2023</figcaption>
                 </figure>
 
-                <br>
-                <hr>
-                <br>
-
-                <table border="4" cellpadding="5px" class="table"> <!-- Inicio de tabla -->
-                    <h3 class="table-tittle">Top 5 Consolas mas vendidas</h3>
-                    <tr>
-                        <th>Puesto</th>
-                        <th>Consola</th>
-                        <th>Año de salida</th>
-                        <th>Unidades vendidas</th>
-                    </tr>
-                    <tr>
-                        <td>#1</td>
-                        <td>Playstation 2</td>
-                        <td>2000</td>
-                        <td>159 Millones</td>
-                    </tr>
-                    <tr>
-                        <td>#2</td>
-                        <td>Nintendo DS</td>
-                        <td>2004</td>
-                        <td>154.02 Millones</td>
-                    </tr>
-                    <tr>
-                        <td>#3</td>
-                        <td>Game Boy / Game Boy Color</td>
-                        <td>1989</td>
-                        <td>118.69 Millones</td>
-                    </tr>
-                    <tr>
-                        <td>#4</td>
-                        <td>Playstation 4</td>
-                        <td>2013</td>
-                        <td>117.20 Millones</td>
-                    </tr>
-                    <tr>
-                        <td>#5</td>
-                        <td>Nintendo Switch</td>
-                        <td>2017</td>
-                        <td>111.08 Millones</td>
-                    </tr>
-                </table> <!-- Cierre de tabla -->
+                <div class="top-5">
+                    <table border="4" cellpadding="5px" class="table"> <!-- Inicio de tabla -->
+                        <h3 class="table-tittle">Top 5 Consolas mas vendidas</h3>
+                        <tr>
+                            <th>Puesto</th>
+                            <th>Consola</th>
+                            <th>Año de salida</th>
+                            <th>Unidades vendidas</th>
+                        </tr>
+                        <tr>
+                            <td>#1</td>
+                            <td>Playstation 2</td>
+                            <td>2000</td>
+                            <td>159 Millones</td>
+                        </tr>
+                        <tr>
+                            <td>#2</td>
+                            <td>Nintendo DS</td>
+                            <td>2004</td>
+                            <td>154.02 Millones</td>
+                        </tr>
+                        <tr>
+                            <td>#3</td>
+                            <td>Game Boy / Game Boy Color</td>
+                            <td>1989</td>
+                            <td>118.69 Millones</td>
+                        </tr>
+                        <tr>
+                            <td>#4</td>
+                            <td>Playstation 4</td>
+                            <td>2013</td>
+                            <td>117.20 Millones</td>
+                        </tr>
+                        <tr>
+                            <td>#5</td>
+                            <td>Nintendo Switch</td>
+                            <td>2017</td>
+                            <td>111.08 Millones</td>
+                        </tr>
+                    </table> <!-- Cierre de tabla -->
+                </div>
+                
             </aside> <!-- Cierre .container-aside -->
         </div> <!-- Cierre .container -->
     </main>
@@ -141,6 +143,8 @@
             <a target="_blank" href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-twitter"></i></a>            
         </div>
     </footer>
+
+    <script src="./js/index.js"></script>
     
 </body>
 </html>

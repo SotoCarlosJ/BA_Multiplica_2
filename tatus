@@ -1,0 +1,41 @@
+[33mcommit 8a9cda233db7111c88c85da8878f3e63b8c334d2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Carlos Soto <carloss.empire@gmail.com>
+Date:   Thu Oct 27 10:40:26 2022 -0300
+
+    modificacion de paleta de colores y creacion de barra de busqueda
+
+[33mcommit 0342c512431a53bde0235240859246d8be5f4f86[m
+Author: Carlos Soto <carloss.empire@gmail.com>
+Date:   Wed Oct 26 18:53:06 2022 -0300
+
+    creacion de estilos para el main y el footer
+
+[33mcommit cea52043c9dad9f3900646f8caca42cd718ba430[m
+Author: Carlos Soto <carloss.empire@gmail.com>
+Date:   Mon Oct 24 15:57:47 2022 -0300
+
+    modificacion a las rutas en archivos de html
+
+[33mcommit 6f21f9cd2f6976cc7d50901ee3383be00eec94be[m
+Author: Carlos Soto <carloss.empire@gmail.com>
+Date:   Mon Oct 24 15:46:45 2022 -0300
+
+    modificacion de rutas en index.html
+
+[33mcommit 34a363c0ebe76844b664296649ad67f83dd817c7[m
+Author: Carlos Soto <carloss.empire@gmail.com>
+Date:   Mon Oct 24 15:29:57 2022 -0300
+
+    creacion de nuevos archivos e inicio de cracion de estilos para el header y la barra de navegacion
+
+[33mcommit 866b9cf2f64a20c2166593be3740e1bff61ce2de[m
+Author: Carlos Soto <carloss.empire@gmail.com>
+Date:   Fri Oct 21 16:59:28 2022 -0300
+
+    Creacion de estructura de proyecto
+
+[33mcommit 369149f163e9c9fc93649a558c82b1df2c1c1fc9[m
+Author: SotoCarlosJ <88446071+SotoCarlosJ@users.noreply.github.com>
+Date:   Fri Oct 21 13:44:07 2022 -0300
+
+    Initial commit
