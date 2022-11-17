@@ -1,0 +1,118 @@
+:root {
+    --dark: #1f192f;
+    --darker-green: #2d6073;
+    --green: #65b8a6 ;
+    --lighter-green: #b5e8c3;
+    --yellow-green: #f0f7da;
+    --white: #FFFFFF;
+    /* Paleta de colores vieja
+    --light_blue: #00B4FF;
+    --dark-gray: #515151;
+    --black: #000000;
+    --white: #FFFFFF;
+    --gray: #d1d1d1;
+    */
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Inicio del estilo para el header */
+header {
+    text-align: center;
+    padding: 1.5rem 6rem;
+    background-color: var(--dark);
+    height: 15vh;
+}
+.tittle {
+    font-size: 3rem;
+    color: var(--white);
+}
+
+/* Inicio del estilo para el main */
+.home a i {
+    position: absolute;
+    top: 8rem;
+    left: 2rem;
+    padding: 0.8rem;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    font-size: 1.6rem;
+    background-color: #1f192f;
+    color: #FFFFFF;
+}
+.login {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    width: 32rem;
+    height: 16rem;
+    padding:1.2rem;
+    border: 1px solid var(--dark);
+    display: flex;
+    flex-direction: column;
+}
+.login-register {
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    background-color: var(--yellow-green);
+    border: 1px solid var(--dark);
+    border-radius: 4px;
+    padding: 0.6rem;
+}
+
+/* Inicio del estilo para el footer */
+footer {
+    height: 25vh;
+    border-top: 2px solid var(--yellow-green);
+    background-color: var(--darker-green);
+    padding: 2rem;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.socialnetwork {
+    height: 0.4rem;
+}
+footer .socialnetwork {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+footer .socialnetwork a:hover {
+    font-size: 3rem;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.table {
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--white);
+}
+.table-tittle {
+    margin-bottom: 1rem;
+    text-align: center;
+}

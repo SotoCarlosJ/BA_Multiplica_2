@@ -15,39 +15,50 @@
 </head>
 <body>
     <header>
-        <div class="tittle"> <!-- Inicio .tittle -->
-            <h1>Video Game Store</h1>
+        <h1 class="tittle">Video Game Store</h1>
+        <div class="sub-tittle">
             <div id="soundtrack"> <!-- Inicion #soundtrack -->
                 <audio src="../audio/Super_Mario_Soundtrack.mp4" preload="auto" controls></audio>
                 <p>Soundtrack of the day: <span>Super Mario Bros.</span></p>
             </div> <!-- Cierre #soundtrack -->
-        </div> <!-- Cierre .tittle -->
-        <div class="user"> <!-- Cierre .user -->
-            <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="./user/login.html">login</a>
-            <p> / </p>
-            <a href="./user/register.html">register</a>
-        </div> <!-- Cierre .user -->
+
+            <div class="user"> <!-- Cierre .user -->
+                <div class="user-search">
+                    <input type="text" placeholder="Buscar">
+                    <i id="btn" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="user-icons">
+                    <a href="./pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="./pages/user/login.html">login</a>
+                    <p> / </p>
+                    <a href="./pages/user/register.html">register</a>
+                </div>
+            </div> <!-- Cierre .user -->
+        </div>
+        
     </header>
 
     <nav class="navbar"> <!-- Inicio .navbar -->
-        <ul>
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <a href="./news.html">Noticias</a>
-            </li>
-            <li>
-                <a href="./products.html">Productos</a>                    
-            </li>
-            <li>
-                <a href="./contact.html">Contacto</a>
-            </li>
-        </ul>
-    </nav> <!-- Cierre .navbar -->
-
-    <hr>
+        <div id="burguer-menu" >
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./news.html">Noticias</a>
+                </li>
+                <li>
+                    <a href="./products.html">Productos</a>                    
+                </li>
+                <li>
+                    <a href="./contact.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav> <!-- Cierre .navbar -->    
 
     <footer>
         <p>Carlos Soto ::: &copy; 2022</p>
@@ -59,6 +70,7 @@
             <a target="_blank" href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-twitter"></i></a>            
         </div>
     </footer>
-    
+
+    <script src="../js/index.js"></script>
 </body>
 </html>

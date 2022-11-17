@@ -15,74 +15,50 @@
 </head>
 <body>
     <header>
-        <div class="tittle"> <!-- Inicio .tittle -->
-            <h1>Video Game Store</h1>
+        <h1 class="tittle">Video Game Store</h1>
+        <div class="sub-tittle">
             <div id="soundtrack"> <!-- Inicion #soundtrack -->
-                <audio src="./audio/Super_Mario_Soundtrack.mp4" preload="auto" controls></audio>
+                <audio src="../audio/Super_Mario_Soundtrack.mp4" preload="auto" controls></audio>
                 <p>Soundtrack of the day: <span>Super Mario Bros.</span></p>
             </div> <!-- Cierre #soundtrack -->
-        </div> <!-- Cierre .tittle -->
-        <div class="user"> <!-- Cierre .user -->
-            <div class="user-search">
-                <input type="text" placeholder="Buscar">
-                <i id="btn" class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="user-icons">
-                <a href="./pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="./pages/user/login.html">login</a>
-                <p> / </p>
-                <a href="./pages/user/register.html">register</a>
-            </div>
-        </div> <!-- Cierre .user -->
+
+            <div class="user"> <!-- Cierre .user -->
+                <div class="user-search">
+                    <input type="text" placeholder="Buscar">
+                    <i id="btn" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="user-icons">
+                    <a href="./pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="./pages/user/login.html">login</a>
+                    <p> / </p>
+                    <a href="./pages/user/register.html">register</a>
+                </div>
+            </div> <!-- Cierre .user -->
+        </div>
+        
     </header>
 
     <nav class="navbar"> <!-- Inicio .navbar -->
-        <ul>
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <a href="./news.html">Noticias</a>
-            </li>
-            <li>
-                <a href="./products.html">Productos</a>                    
-            </li>
-            <li>
-                <a href="./contact.html">Contacto</a>
-            </li>
-        </ul>
-    </nav> <!-- Cierre .navbar -->
-
-    <main>
-        <form action="">
-            <fieldset>
-                <legend>Contacto</legend>
-
-                <label for="name">Nombre: </label>
-                <input type="text" name="name" placeholder="Escribre tu nombre" >
-
-                <label for="lastName">Apellido: </label>
-                <input type="text" name="lastName" placeholder="Escribre tu apellido" >
-
-                <label for="email">Email: </label>
-                <input type="email" name="email" placeholder="Escribre tu email" >
-
-                <label for="email">Tipo de consulta: </label>
-                <select>
-                    <option value="a">A</option>
-                    <option value="b">B</option>
-                    <option value="c">C</option>
-                </select>
-
-                <label for="message">Consulta: </label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-               <input type="submit" name="send" id="send">
-               <input type="reset" name="reset" id="reset">
-
-            </fieldset>
-        </form>
-    </main>
+        <div id="burguer-menu" >
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./news.html">Noticias</a>
+                </li>
+                <li>
+                    <a href="./products.html">Productos</a>                    
+                </li>
+                <li>
+                    <a href="./contact.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav> <!-- Cierre .navbar -->    
 
     <footer>
         <p>Carlos Soto ::: &copy; 2022</p>
@@ -94,6 +70,7 @@
             <a target="_blank" href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-twitter"></i></a>            
         </div>
     </footer>
-    
+
+    <script src="../js/index.js"></script>
 </body>
 </html>
