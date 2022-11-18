@@ -60,26 +60,60 @@ header {
     align-items: center;
     width: 100%;
 }
-
 .login-box {
     width: 32rem;
-    height: 16rem;
+    height: 18rem;
     padding:1.2rem;
     border: 1px solid var(--dark);
     display: flex;
     flex-direction: column;
 }
-.login-register {
+.login-box label {
+    margin-bottom: 0.4rem;
+}
+.login-box input,
+.login-box h2 {
+    margin-bottom: 1rem;
+}
+.password-box {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+#password-eye {
+    position: absolute;
+    top: 5px;
+    left: 445px;
+}
+
+.login-box .btn-login {
+    margin-bottom: 0.4rem;
+}
+.login-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-register {
+    width: 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    gap: 0.4rem;
 }
 .btn {
-    background-color: var(--yellow-green);
+    background-color: var(--lighter-green);
     border: 1px solid var(--dark);
     border-radius: 4px;
     padding: 0.6rem;
+    color: var(--dark);
+    font-weight: bold;
+    width: 50%;
 }
-
+.btn-register {
+    width: 30%;
+}
 /* Inicio del estilo para el footer */
 footer {
     height: 25vh;

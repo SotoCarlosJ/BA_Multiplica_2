@@ -31,11 +31,17 @@
                 <input type="mail" name="mail">
 
                 <label for="password">Ingrese su contrasena</label>
-                <input type="password" name="password">
+                <div class="password-box">
+                    <input type="password" name="password" id="password-id">
+                    <i class="fa-solid fa-eye-slash" id="password-eye"></i>
+                </div>
 
-                <button class="btn btn-login">Continuar</button>
+                <div class="login-btn">
+                    <button class="btn btn-login">Continuar</button>
+                    <a href="#"><p>Olvidaste tu contrasena?</p></a>
+                </div>
 
-                <a href="#"><p>Olvidaste tu contrasena?</p></a>
+
             </div>
             <div class="login-register">
                 <p>No tienes cuenta aun? Registrate aca</p>
@@ -55,6 +61,6 @@
         </div>
     </footer>
 
-    <script src="../js/index.js"></script>
+    <script src="../../js/login.js"></script>
 </body>
 </html>
