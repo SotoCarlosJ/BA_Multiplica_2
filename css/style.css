@@ -82,7 +82,7 @@ audio {
 .user-search #btn {
     position: relative;
     color: var(--dark);
-    top: 0.5rem;
+    top: 0.2rem;
     left: 10rem;
     border-left: 1px solid var(--dark);
     padding-left: 0.5rem;
@@ -216,10 +216,20 @@ footer .socialnetwork a:hover {
         display: flex;
         flex-direction: column;
     }
-    .sub-tittle .user {
-        display: none;
+    .user {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-
+    .user-icons {
+        gap: 0.3rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .user-icons p {
+        margin: 0;
+    }
 
     /* menu */
     .menu {
