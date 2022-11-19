@@ -1,14 +1,6 @@
-// for (let i = 1; i <= 10; i++) {
-//     if(i % 2 === 0){
-//         console.log(i)
-//     }
-// }
+const burger = document.getElementById('menu-bars');
+const menu = document.getElementById('displayable-menu');
 
-// let i = 1;
-
-// while(i <= 10) {
-//     if(i % 2 === 0){
-//         console.log(`El numero: ${i} es par`)
-//     }
-//     i++
-// }
+burger.addEventListener('click', () => {
+    menu.classList.toggle('undisplayed')
+})

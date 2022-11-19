@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">   
     <script src="https://kit.fontawesome.com/08e5deb443.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -38,12 +40,30 @@
         
     </header>
 
-    <nav class="navbar"> <!-- Inicio .navbar -->
-        <div id="burguer-menu" >
-            <i class="fa-solid fa-bars"></i>
+    <nav class="menu"> <!-- Inicio .navbar -->
+        <div id="burger-menu" >
+            <i class="fa-solid fa-bars" id="menu-bars"></i>
+            <div id="displayable-menu" class="undisplayed">
+                <ul id="burger-menu-displayed">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./pages/news.html">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="./pages/products.html">Productos</a>                    
+                    </li>
+                    <li>
+                        <a href="./pages/contact.html">Contacto</a>
+                    </li>
+                </ul>
+
+            </div>
+
         </div>
-        <div class="menu">
-            <ul>
+        <div class="menu-descktop">
+            <ul id="menu-descktop-displayed">
                 <li>
                     <a href="./index.html">Home</a>
                 </li>
@@ -78,7 +98,7 @@
                     <video width="440" height="220" src="./video/Stray Gameplay [4K 60FPS PC] - The First 8 Minutes.mp4" controls></video>
                 </article> <!-- Cierre 2nd articulo -->
             </section> <!-- Cierre .container-section -->
-            <aside clas="container-aside"> <!-- Inicio .container-aside -->
+            <aside class="container-aside"> <!-- Inicio .container-aside -->
                 <h2>Super Mario Bros</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dolorem laborum minima quaerat, in consectetur reiciendis tenetur error temporibus magnam consequatur, odio, cumque impedit eveniet esse hic aliquam a aut.</p>
 
@@ -88,7 +108,7 @@
                 </figure>
 
                 <div class="top-5">
-                    <table border="4" cellpadding="5px" class="table"> <!-- Inicio de tabla -->
+                    <table class="table table-dark table-hover"> <!-- Inicio de tabla -->
                         <h3 class="table-tittle">Top 5 Consolas mas vendidas</h3>
                         <tr>
                             <th>Puesto</th>
