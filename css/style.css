@@ -36,10 +36,12 @@ header {
     padding: 1.5rem 6rem;
     background-color: var(--dark);
     gap: 2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 .tittle {
     font-size: 3rem;
     color: var(--white);
+    font-weight: bold;
 }
 .sub-tittle {
     width: 100%;
@@ -207,7 +209,7 @@ footer .socialnetwork a:hover {
 @media (max-width: 767px) {
     /* header */
     header {
-        padding: 1rem;
+        padding: 0.6rem;
         align-items: center;
         gap: 1rem;
     }  

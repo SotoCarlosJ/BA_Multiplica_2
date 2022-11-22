@@ -30,10 +30,11 @@ body h1, h2, h3, h4, h5, h6, p, ul {
 
 /* Inicio del estilo para el header */
 header {
-    text-align: center;
-    padding: 1.5rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--dark);
-    height: 20vh;
+    height: 15vh;
 }
 .tittle {
     font-size: 3rem;
@@ -43,7 +44,7 @@ header {
 /* Inicio del estilo para el main */
 main {
     position: relative;
-    height: 70vh;
+    height: 75vh;
 }
 .home a i {
     position: absolute;
@@ -57,28 +58,26 @@ main {
     color: #FFFFFF;
 }
 .login {
-    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
 }
 .login-box {
-    width: 32rem;
-    height: 18rem;
-    padding:1.2rem;
+    width: 26rem;
+    padding: 1rem;
     border: 1px solid var(--dark);
     display: flex;
     flex-direction: column;
 }
-.login-box label {
-    margin-bottom: 0.4rem;
-    font-weight: bold;
+.login-box h2 {
+    margin-bottom: 0.8rem;
 }
 .login-box input,
-.login-box h2 {
-    margin-bottom: 1rem;
+.login-box label {
+    margin-bottom: 0.4rem;
 }
 .password-box {
     display: flex;
@@ -88,7 +87,10 @@ main {
 #password-eye {
     position: absolute;
     top: 5px;
-    left: 445px;
+    left: 357px;
+}
+#password-id {
+    margin-bottom: 2rem;
 }
 
 .login-box .btn-login {
@@ -98,6 +100,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.login-btn a {
+    margin-bottom: 0.6rem;
 }
 .login-register {
     width: 32rem;
@@ -123,7 +128,7 @@ main {
     color: var(--white);
 }
 .btn-register {
-    width: auto;
+    width: 30%;
 }
 /* Inicio del estilo para el footer */
 footer {
@@ -190,7 +195,7 @@ footer .socialnetwork a:hover {
         left: 180px;
     }
     .btn-register {
-        width: auto;
+        width: 50%;
     }
     .home a i {
         top: 1rem;
